@@ -1,5 +1,6 @@
 msp430-bin2ihex.py
 
+msp430-bin2ihex.py is a binary files to a intel hex format converter.
 This script require python version 3.
 
 Usage: msp430-bin2ihex.py -d DEVICE [-i file] [-c file] [-v file] > output
