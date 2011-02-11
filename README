@@ -1,0 +1,19 @@
+msp430-bin2ihex.py
+
+This script require python version 3.
+
+Usage: msp430-bin2ihex.py -d DEVICE [-i file] [-c file] [-v file] > output
+
+Options:
+  -h, --help            show this help message and exit
+  -d DEVICE, --device=DEVICE
+                        Select device name[ MSP430G2021, MSP430G2031,
+                        MSP430G2121, MSP430G2131, MSP430G2221, MSP430G2231 ]
+  -i INFO, --info=INFO  binary file to write information memory
+  -c CODE, --code=CODE  binary file to write main memory(code)
+  -v VECTOR, --vector=VECTOR
+                        binary file to write main memory(interrupt vector)
+
+
+Example:
+ python msp430-bin2ihex.py -d MSP430G2231 -i infomem.bin -c code.bin -v vector.bin > output.ihex
